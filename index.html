@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <!-- ===== Start: Font Awesome Cdn ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <!-- ===== End: Font Awesome Cdn ===== -->
     <!-- ===== Start: Tailwind CDN ===== -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- ===== End: Tailwind CDN ===== -->
+    <!-- ===== Start: Custom Css ===== -->
     <link rel="stylesheet" href="style.css" />
+    <!-- ===== End: Custom Css ===== -->
   </head>
   <body>
     <section class="max-w-[1200px] mx-auto mt-12 p-4">
@@ -122,7 +130,7 @@
         <!-- ===== End: Our Features Products ===== -->
         <!-- ===== Start: Great Tea Section ===== -->
         <section
-          class="great-tea-section mb-28 flex flex-col md:flex-row gap-10"
+          class="great-tea-section mb-7 md:mb-28 flex flex-col md:flex-row gap-10"
         >
           <!-- Great Tea Images  -->
           <div
@@ -173,7 +181,7 @@
         <!-- ===== End: Great Tea Section ===== -->
         <!-- ===== Start: Our Client Section ===== -->
         <section
-          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] py-6 md:py-0 px-4 md:px-16 rounded-xl flex flex-col md:flex-row justify-center items-center gap-15 h-[800px] md:h-[600px] mb-28"
+          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] py-6 md:py-0 px-4 md:px-16 rounded-xl flex flex-col md:flex-row justify-center items-center gap-15 h-[800px] md:h-[600px] md:mb-20"
         >
           <!-- Client Content  -->
           <div class="client-content text-white md:w-1/2">
@@ -272,7 +280,110 @@
       <!-- ===== End: Main Section ===== -->
     </section>
     <!-- ===== Start: Footer Section ===== -->
+    <footer class="bg-gradient-to-r from-[#ff89381a] to-[#ff00001a]">
+      <section class="max-w-[1200px] mx-auto mt-12 px-4 py-5 md:py-24">
+        <!-- footer heading  -->
+        <div class="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between items-center">
+          <img class="opacity-40 self-start md:self-center" src="./images/cup.png" alt="" />
+          <div>
+            <span class="font-medium text-xl me-5 text-[var(--secondary-color)]"
+              >Get Ready to Started?</span
+            >
+            <button
+              class="bg-white px-6 py-3 text-[var(--secondary-color)] font-bold rounded-lg"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
 
+        <!-- ===== Start: Footer LInks And Subcribe Section ===== -->
+        <nav class="mt-5 md:mt-20 grid grid-cols-1 md:grid-cols-4">
+          <!-- Quick Links  -->
+          <ul class="quick-links mb-4 md:mb-0">
+            <h2 class="font-medium text-xl text-[#9A9393] mb-4">Quick Links</h2>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Life</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Car</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Insurance</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Privacy Policy</a>
+            </li>
+          </ul>
+          <!-- Our Services  -->
+          <ul class="our-services mb-4 md:mb-0">
+            <h2 class="font-medium text-xl text-[#9A9393] mb-4">
+              Our Services
+            </h2>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Life Insurance</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Car Insurance</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Health Insurance</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">House Insurance</a>
+            </li>
+          </ul>
+          <!-- Help  -->
+          <ul class="help">
+            <h2 class="font-medium text-xl text-[#9A9393] mb-4">Help</h2>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">FAQs</a>
+            </li>
+            <li class="mb-2 text-[var(--secondary-color)] font-semibold">
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+          <!-- ===== Start: Subcribe to our Newsletter ===== -->
+          <div class="mt-4 md:mt-0">
+            <h2 class="font-medium text-2xl text-[#9A9393] mb-4">
+              Subscribe to our newsletter
+            </h2>
+            <div>
+              <div class="flex items-center md:justify-center">
+                <div>
+                  <label
+                    class="text-[14px] text-[var(--secondary-color)] font-normal"
+                    for="email"
+                    >Email address</label
+                  >
+                  <input
+                    class="outline-0 border-b w-full border-[var(--secondary-color)]"
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                  />
+                </div>
+                <img src="./images/input-arrow.png" alt="" />
+              </div>
+              <!-- Start: social icon and links  -->
+              <div class="mt-6 text-[var(--secondary-color)] text-[18px]">
+                <span><i class="fa-brands fa-facebook-f me-3"></i></span>
+                <span><i class="fa-brands fa-twitter me-3"></i></span>
+                <span><i class="fa-brands fa-square-instagram"></i></span>
+              </div>
+              <!-- End: social icon and links  -->
+            </div>
+          </div>
+          <!-- ===== End: Subcribe to our Newsletter ===== -->
+        </nav>
+        <!-- ===== End: Footer Nav LInks And Subcribe Section===== -->
+
+        <span class="inline-flex items-center justify-center font-medium w-full mt-6 md:mt-20 text-[var(--secondary-color)]"
+          ><small>&copy;</small>Hasnat Fahmid - All rights reserved.</span
+        >
+      </section>
+    </footer>
     <!-- ===== End: Footer Section ===== -->
   </body>
 </html>
