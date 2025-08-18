@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- ===== End: Custom Css ===== -->
   </head>
-  <body>
+  <body class="manrope-font">
     <section class="max-w-[1200px] mx-auto mt-12 p-4">
       <!-- ===== Start: Banner Section ===== -->
       <header class="flex flex-col md:flex-row">
@@ -181,7 +181,7 @@
         <!-- ===== End: Great Tea Section ===== -->
         <!-- ===== Start: Our Client Section ===== -->
         <section
-          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] py-6 md:py-0 px-4 md:px-16 rounded-xl flex flex-col md:flex-row justify-center items-center gap-15 h-[800px] md:h-[600px] md:mb-20"
+          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] py-6 md:py-0 px-4 md:px-16 rounded-xl flex flex-col md:flex-row justify-center items-center gap-15 h-[800px] md:h-[600px] mb-8 md:mb-20"
         >
           <!-- Client Content  -->
           <div class="client-content text-white md:w-1/2">
@@ -276,15 +276,82 @@
           </div>
         </section>
         <!-- ===== End: Our Client Section ===== -->
+        <!-- ===== Start: News And Events ===== -->
+        <section class="my-10 md:my-24">
+          <!-- News and Event heading  -->
+          <div class="text-center">
+            <h2 class="text-5xl font-bold text-gray-700 mb-8">News & Events</h2>
+            <p class="font-semibold text-gray-500">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, <br />by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+          </div>
+
+          <!-- ===== Start:  News And Events Cards  ===== -->
+          <div class="news-cards-container grid grid-cols-1 md:grid-cols-3 mt-12 gap-5">
+            <!-- ===== Start: News Card 1 ===== -->
+            <div class="border border-gray-300 p-5 rounded-lg">
+              <img class="w-full" src="./images/news-1.png" alt="" />
+              <div class="mt-5 px-2">
+                <p class="text-gray-400 font-medium mb-2">Aug 05, 2025</p>
+                <h4 class="text-xl font-bold text-[#1c1c1c]">Collecting 8 points for discount</h4>
+                <p class="text-[var(--secondary-color)] my-4 font-medium">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
+                <a class="font-semibold" href="">Learn More...</a>
+              </div>
+            </div>
+            <!-- ===== End: News Card 1 ===== -->
+            <!-- ===== Start: News Card 2 ===== -->
+            <div class="border border-gray-300 p-5 rounded-lg">
+              <img class="w-full" src="./images/news-2.png" alt="" />
+              <div class="mt-5 px-2">
+                <p class="text-gray-400 font-medium mb-2">Aug 05, 2025</p>
+                <h4 class="text-xl font-bold text-[#1c1c1c]">Collecting 8 points for discount</h4>
+                <p class="text-[var(--secondary-color)] my-4 font-medium">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
+                <a class="font-semibold" href="">Learn More...</a>
+              </div>
+            </div>
+            <!-- ===== End: News Card 2 ===== -->
+            <!-- ===== Start: News Card 3 ===== -->
+            <div class="border border-gray-300 p-5 rounded-lg">
+              <img class="w-full" src="./images/news-3.png" alt="" />
+              <div class="mt-5 px-2">
+                <p class="text-gray-400 font-medium mb-2">Aug 05, 2025</p>
+                <h4 class="text-xl font-bold text-[#1c1c1c]">Collecting 8 points for discount</h4>
+                <p class="text-[var(--secondary-color)] my-4 font-medium">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
+                <a class="font-semibold" href="">Learn More...</a>
+              </div>
+            </div>
+            <!-- ===== End: News Card 3 ===== -->
+          </div>
+          <!-- ===== End:  News And Events Cards  ===== -->
+        </section>
+        <!-- ===== End: News And Events ===== -->
       </main>
       <!-- ===== End: Main Section ===== -->
     </section>
     <!-- ===== Start: Footer Section ===== -->
     <footer class="bg-gradient-to-r from-[#ff89381a] to-[#ff00001a]">
-      <section class="max-w-[1200px] mx-auto mt-12 px-4 py-5 md:py-24">
+      <section class="max-w-[1200px] mx-auto  px-4 py-5 md:py-24">
         <!-- footer heading  -->
-        <div class="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between items-center">
-          <img class="opacity-40 self-start md:self-center" src="./images/cup.png" alt="" />
+        <div
+          class="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between items-center"
+        >
+          <img
+            class="opacity-40 self-start md:self-center"
+            src="./images/cup.png"
+            alt=""
+          />
           <div>
             <span class="font-medium text-xl me-5 text-[var(--secondary-color)]"
               >Get Ready to Started?</span
@@ -379,7 +446,8 @@
         </nav>
         <!-- ===== End: Footer Nav LInks And Subcribe Section===== -->
 
-        <span class="inline-flex items-center justify-center font-medium w-full mt-6 md:mt-20 text-[var(--secondary-color)]"
+        <span
+          class="inline-flex items-center justify-center font-medium w-full mt-6 md:mt-20 text-[var(--secondary-color)]"
           ><small>&copy;</small>Hasnat Fahmid - All rights reserved.</span
         >
       </section>
